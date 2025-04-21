@@ -151,7 +151,7 @@ transition: slide-left
 - Read [How to perform CRUD operations](https://www.mongodb.com/resources/products/fundamentals/crud#how-to-perform-crud-operations)
    - Go thru each of the 9 mongoDB CRUD operations to practice creating, reading, updating, and deleting to our `orders` collection.  For example:
       - `db.orders.insertOne({ order: ["1 taco", "1 pop"], name: "bob", isReadyForPickup: false })`
-- Q: Does mongoDB let you just randomly add any new property/value when updating an existing document/object without validation? Discuss tradeoffs with that ability.
+- Q: Does mongoDB let you just randomly add any new property/value when updating an existing document/object without validation? If so, discuss tradeoffs with that ability.
 - Stretch goal: create a database/collection/insert just 1 document/object that:
    - emulates a social media app of your choosing (twitter, tiktok, instagram, pinterest etc) 
    - ensure your mock data takes into account all the various pieces of data involved with just one post (including text, image/video urls, date, hashtags, likes, comments, etc)
@@ -168,7 +168,7 @@ transition: slide-left
 
 - What is data modelling and why is it important?
 - Relationships: one-to-one, one-to-many, many-to-many, embedding vs referencing
-- Watch video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
+- Watch video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170#t=7m55s)
 - Read Docs: [Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
 
 ---
