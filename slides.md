@@ -129,6 +129,7 @@ class: text-left
 - 🏫 [MongoDB University](https://learn.mongodb.com/)
 - ✌️ [MongoDB for VS Code](https://code.visualstudio.com/docs/azure/mongodb)
 - 🧱 [Built with what](https://builtwith.com/)
+- 🎨 [Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
 
 <br>
 <hr>
@@ -167,9 +168,17 @@ transition: slide-left
 (remainder of time)
 
 - What is data modelling and why is it important?
-- Relationships: one-to-one, one-to-many, many-to-many, embedding vs referencing
-- Watch video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170#t=7m55s)
-- Read Docs: [Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
+- 1) Analyze the Scenario:
+   - You're building a simple database for a blog that will store: articles, users, comments, tags
+- 2) Brainstorm the Data: 
+   - Think about what info you might store for each item (ex: comment: user id, comment, date)
+- 3) Decide the data model
+   - Draw lines to represent relationships between:
+      - users to articles, users to comments, articles to comments, articles to tags
+      - decide if relationship is one-to-one (1-to-1), one-to-many (1-to-N), many-to-many (N-to-N)
+      - if there is a 1-to-N or N-to-N relationship, decide if you should embed or reference which depends on *how you query your data* (what shape of JSON do you want to get back when fetched)
+      - Compare your answer to this [video](https://www.youtube.com/watch?v=3GHZd0zv170#t=9m00s)
+
 
 ---
 transition: slide-left
@@ -180,5 +189,5 @@ transition: slide-left
 - Practice creating new databases and collections but catered toward a different area
    - ex: movies, books, your hobby/interest, your upcoming note-taking midterm app, etc
    - prepare actual mock data that you will use for next class so that it's more  interesting to you
-- Watch whole video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
+- Watch video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
    - [research more](https://learn.mongodb.com/courses/relational-to-document-model) on Data Modeling to make your data model match your application's needs
