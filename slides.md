@@ -62,6 +62,7 @@ transition: slide-left
 - What is SQL? (Structured Query Language)
    - analogy: it's like a spreadsheet – neat columns, clearly labeled, and you know exactly what kind of data goes in each cell.
    - use when you need structured data, relationships between tables matter (e.g., customers & orders), and you need strong data consistency and integrity
+   - ask chatGPT: what is database normalization?
 - What is No-SQL? (Not only SQL)
    - analogy: it's like a folder of documents – each one might have similar info but with different structures, more flexible
    - use when you have lots of varied or rapidly changing data, need to scale quickly (ex: web apps with millions of users), or you’re working with flexible or hierarchical data like JSON
@@ -145,10 +146,10 @@ transition: slide-left
 ---
 
 # Exercise: CRUD in MongoDB
-(35 min) Perform queries in MongoDB
+(40 min) Perform queries in MongoDB
 
 - Read [How to perform CRUD operations](https://www.mongodb.com/resources/products/fundamentals/crud#how-to-perform-crud-operations)
-   - Go thru each of the 19 mongoDB CRUD operations to practice creating, reading, updating, and deleting to our `orders` collection.  For example:
+   - Go thru each of the 9 mongoDB CRUD operations to practice creating, reading, updating, and deleting to our `orders` collection.  For example:
       - `db.orders.insertOne({ order: ["1 taco", "1 pop"], name: "bob", isReadyForPickup: false })`
 - Q: Does mongoDB let you just randomly update an existing document/object with any new property/value without validation? Discuss tradeoffs with that ability.
 - Stretch goal: create a database/collection/insert just 1 document/object that:
