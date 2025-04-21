@@ -145,13 +145,15 @@ transition: slide-left
 ---
 
 # Exercise: CRUD in MongoDB
-(30 min) Perform queries in MongoDB
+(35 min) Perform queries in MongoDB
 
 - Read [How to perform CRUD operations](https://www.mongodb.com/resources/products/fundamentals/crud#how-to-perform-crud-operations)
    - Go thru each of the 19 mongoDB CRUD operations to practice creating, reading, updating, and deleting to our `orders` collection.  For example:
       - `db.orders.insertOne({ order: ["1 taco", "1 pop"], name: "bob", isReady: false })`
 - Q: Does mongoDB let you just randomly update an existing document/object with any new property/value without validation? Discuss tradeoffs with that ability.
-- Stretch goal: emulate any social media app (twitter, tiktok, instagram, pinterest etc) by attempting to create a database/collections then inserting mock data that takes into account all the various pieces of data involved with just one post (including likes, comments, image/video urls, etc)
+- Stretch goal: create a database/collection/insert just 1 document/object that:
+   - emulates a social media app of your choosing (twitter, tiktok, instagram, pinterest etc) 
+   - ensure your mock data takes into account all the various pieces of data involved with just one post (including text, image/video urls, date, hashtags, likes, comments, etc)
 
 <!--
 -->
@@ -177,5 +179,5 @@ transition: slide-left
 - Practice creating new databases and collections but catered toward a different area
    - ex: movies, books, your hobby/interest, your upcoming note-taking midterm app, etc
    - prepare actual mock data that you will use for next class so that it's more  interesting to you
-- Watch video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
+- Watch whole video: [Data Modeling with MongoDB](https://www.youtube.com/watch?v=3GHZd0zv170)
    - [research more](https://learn.mongodb.com/courses/relational-to-document-model) on Data Modeling to make your data model match your application's needs
