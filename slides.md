@@ -147,7 +147,7 @@ transition: slide-left
 ---
 
 # Exercise: CRUD in MongoDB
-(40 min) Perform queries in MongoDB
+(30 min) Perform queries in MongoDB
 
 - Read [How to perform CRUD operations](https://www.mongodb.com/resources/products/fundamentals/crud#how-to-perform-crud-operations)
    - Go thru each of the 9 mongoDB CRUD operations to practice creating, reading, updating, and deleting to our `orders` collection.  For example:
@@ -176,7 +176,7 @@ transition: slide-left
    - Draw lines to represent relationships between:
       - users to articles, users to comments, articles to comments, articles to tags
       - decide if relationship is one-to-one (1-to-1), one-to-many (1-to-N), many-to-many (N-to-N)
-      - if there is a 1-to-N or N-to-N relationship, decide if you should embed or reference which depends on *how you query your data* (what shape of JSON do you want to get back when fetched)
+      - if there is a 1-to-N or N-to-N relationship, decide if you should embed or reference which depends on *how you query your data* (ex: do you plan to query by users? IF so, don't embed users)
       - Compare your answer to this [video](https://www.youtube.com/watch?v=3GHZd0zv170#t=9m00s)
 
 
